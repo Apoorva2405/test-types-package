@@ -1,0 +1,14 @@
+{
+    "name": "@apoorva2405/test-types-package",
+    "version": "1.0.0",
+    "description": "Typescript definitions for the Adobe UXP JS API",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/apoorva2405/test-types-package"
+    },
+    "keywords": [
+      "javascript"
+    ],
+    "homepage": "https://github.com/apoorva2405/test-types-package#readme"
+  }

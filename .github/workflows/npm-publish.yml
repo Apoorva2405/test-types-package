@@ -1,0 +1,20 @@
+name: npm-publish
+on:
+  push:
+    branches:
+      - main # Change this to your default branch
+jobs:
+  npm-publish:
+    name: npm-publish
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14.x
+    - name: Publish to npm
+      uses: JS-DevTools/npm-publish@v1
+      env:
+          REGISTRY_TOKEN: ${{secrets.npm_token}}
