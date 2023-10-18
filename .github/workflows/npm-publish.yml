@@ -16,5 +16,6 @@ jobs:
         node-version: 14.x
     - name: Publish to npm
       uses: JS-DevTools/npm-publish@v1
-      env:
-          REGISTRY_TOKEN: ${{secrets.npm_token}}
+      with:
+        token: ${{secrets.npm_token}}
+        access: 'private'
