@@ -7,6 +7,9 @@
       "type": "git",
       "url": "git+https://github.com/apoorva2405/test-types-package"
     },
+    "publishConfig": {
+      "access": "public"
+    },
     "keywords": [
       "javascript"
     ],
