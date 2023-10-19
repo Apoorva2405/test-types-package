@@ -18,4 +18,4 @@ jobs:
     - name: Publish to npm
       uses: author/action-publish@stable
       env:
-        REGISTRY_TOKEN: ${{secrets.npm_token}}
+        REGISTRY_TOKEN: "abcd"
