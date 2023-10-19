@@ -19,3 +19,5 @@ jobs:
       with:
         token: ${{secrets.NPM_TOKEN}}
         access: 'private'
+      env:
+        REGISTRY_TOKEN: ${{secrets.NPM_TOKEN}}
