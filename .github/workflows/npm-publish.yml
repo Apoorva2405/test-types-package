@@ -13,9 +13,9 @@ jobs:
       uses: actions/checkout@v3
     - name: Set up Node.js
       uses: actions/setup-node@v3
-      run: npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN && npm config set scope "@apoorva2405" && npm config list
       with:
         node-version: 14.x
+    - run: npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN && npm config set scope "@apoorva2405" && npm config list
     - name: Publish to npm
       uses: author/action-publish@stable
       env:
